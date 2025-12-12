@@ -61,45 +61,94 @@
   </script>
 
   <!-- Page Styling -->
-  <style>
+ <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
       background: #0d1117;
-      color: #fff;
-      text-align: center;
-      padding: 50px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
+
+    .card {
+      width: 90%;
+      max-width: 650px;
+      text-align: center;
+      padding: 40px 35px;
+      background: #111827;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(88, 166, 255, 0.15);
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
       color: #58a6ff;
-      font-size: 42px;
+      font-size: 38px;
+      margin-bottom: 10px;
     }
+
     h2 {
       font-weight: normal;
       opacity: 0.85;
+      margin-bottom: 20px;
     }
-    a {
+
+    p {
+      opacity: 0.9;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .link-box a {
+      display: block;
+      background: #1f2937;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 10px;
       color: #58a6ff;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .link-box a:hover {
+      background: #2d3b4f;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 25px;
+      opacity: 0.55;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
-  <h1>Hello! I'm <span style="color:#58a6ff;">Jayaprem V</span> 👋</h1>
-  <h2>UI/UX Designer & Frontend Developer</h2>
+  <div class="card">
+    <h1>Hello! I'm <span style="color:#58a6ff;">Jayaprem V</span> 👋</h1>
+    <h2>UI/UX Designer & Frontend Developer</h2>
 
-  <p>This is my <strong>official GitHub Pages website</strong> crafted for SEO visibility & online branding.</p>
+    <p>Crafting modern digital experiences, clean UI layouts & visually engaging products.</p>
+    <p>This is my <strong>official GitHub Pages website</strong> built for SEO visibility & personal branding.</p>
 
-  <p>🌐 Portfolio → <a href="https://jayapremv.vercel.app">jayapremv.vercel.app</a></p>
-  <p>🔗 GitHub → <a href="https://github.com/JayapremVeeramuthu">JayapremVeeramuthu</a></p>
-  <p>📸 Instagram → <a href="https://www.instagram.com/jayaprem_v">jayaprem_v</a></p>
-  <p>💼 LinkedIn → <a href="https://www.linkedin.com/in/jayaprem-v-37a34a315">Jayaprem V</a></p>
+    <div class="link-box">
+      <a href="https://jayapremv.vercel.app">🌐 Portfolio — jayapremv.vercel.app</a>
+      <a href="https://github.com/JayapremVeeramuthu">🔗 GitHub — JayapremVeeramuthu</a>
+      <a href="https://www.instagram.com/jayaprem_v">📸 Instagram — jayaprem_v</a>
+      <a href="https://www.linkedin.com/in/jayaprem-v-37a34a315">💼 LinkedIn — Jayaprem V</a>
+    </div>
 
-  <br /><br />
-  <p style="opacity:0.7;">© 2025 Jayaprem V — All Rights Reserved.</p>
+    <footer>© 2025 Jayaprem V — All Rights Reserved.</footer>
+  </div>
 </body>
 </html>
